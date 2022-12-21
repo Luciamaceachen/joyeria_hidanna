@@ -1,0 +1,557 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid_inicio {
+    display: grid;
+    grid-template-rows: 13vh auto auto 13vh;
+    grid-template-areas: "header"
+        "imagen"
+        "destacados"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #16213E;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "logo nav";
+}
+
+header div a {
+    grid-area: logo;
+}
+
+header nav {
+    grid-area: nav
+}
+
+.barra_navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    background-color: #16213E;
+    margin-right: 3%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.barra_navegacion li a {
+    padding: 8px;
+    margin: 4px;
+    background-color: #101525;
+    border-radius: 14px;
+    font-size: 0.8rem;
+    color: white
+}
+
+.barra_navegacion li a:hover {
+    background-color: #263155
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+}
+
+header div a img {
+    width: 67%;
+    margin-left: 17%;
+}
+
+.imagen_inicio {
+    grid-area: imagen;
+    position: relative;
+}
+
+.articulos_destacados {
+    grid-area: destacados;
+}
+
+.imagen_inicio img {
+    width: 100%;
+}
+
+.texto_inicio {
+    position: absolute;
+    top: 14%;
+    left: 0.3%;
+    color: white;
+    font-weight: 300;
+    font-size: 1.2rem
+}
+
+.texto_sobre_imagen {
+    position: absolute;
+    top: 44%;
+    left: 24%;
+    color: white;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.btn_sobre_imagen {
+    color: white;
+    position: absolute;
+    top: 56%;
+    left: 45%;
+    font-weight: 300;
+    font-size: 1.1rem;
+    background-color: #16213E;
+    padding: 8px;
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+.btn_sobre_imagen:hover {
+    background-color: #2e3755;
+}
+
+.texto_articulos_destacados {
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.42rem;
+    margin: 2% 0 2% 0;
+}
+
+.articulos_destacados_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.articulos_destacados_cards div img {
+    width: 100%;
+}
+
+.articulos_destacados_cards div p {
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #16213E;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda redes derecha"
+        "izquierda texto derecha";
+}
+
+footer ul {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    grid-area: texto;
+    text-align: center;
+    font-size: 0.83rem;
+    color: white;
+    margin-top: -16px;
+}
+
+i {
+    font-size: 30px;
+    display: flex;
+    margin: 17px 5px 4px 5px;
+    color: white;
+}
+
+.grid_catalogo {
+    display: grid;
+    grid-template-rows: 13vh 1fr 13vh;
+    grid-template-areas: "header"
+        "catalogo"
+        "footer";
+}
+
+main h1 {
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1%;
+}
+
+.categoria_caravanas {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.categorias_catalogo {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.catalogo_cards {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.catalogo_cards div img {
+    width: 100%;
+}
+
+.catalogo_cards div p {
+    width: 100%;
+}
+
+.grid_servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 13vh 1fr 13vh;
+    grid-template-areas: "header"
+        "servicios"
+        "footer";
+}
+
+.nuestros_servicios {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: servicios;
+}
+
+.imagen_nuestros_servicios {
+    width: 27%;
+}
+
+.imagen_nuestros_servicios img {
+    width: 95%;
+    margin: 5% 8% 15% 8%;
+}
+
+.texto_nuestros_servicios {
+    width: 65%;
+    text-align: center;
+    margin: 4% 1% 1% 4.5%;
+    flex-direction: column;
+}
+
+.texto_nuestros_servicios p {
+    padding: 2%;
+}
+
+.grilla_sobre_nosotros {
+    display: grid;
+    grid-template-rows: 13vh 1fr 13vh;
+    grid-template-areas: "header"
+        "contenido"
+        "footer";
+}
+
+.sobre_nosotros {
+    display: flex;
+}
+
+.imagen_sobre_nosotros {
+    width: 29%;
+    margin-right: 2%;
+}
+
+.imagen_sobre_nosotros img {
+    width: 100%;
+    margin: 8% 8% 8% 10%;
+}
+
+.texto_sobre_nosotros {
+    display: flex;
+    width: 65%;
+    text-align: center;
+    margin: 6% 3% 3% 3%;
+    flex-direction: column;
+}
+
+.texto_sobre_nosotros p {
+    padding: 2%;
+    font-size: small;
+}
+
+.sobre_nosotros2 {
+    display: flex;
+}
+
+.imagen_sobre_nosotros2 img {
+    width: 100%;
+    margin: 15% 0% 8% 10%;
+}
+
+.texto_sobre_nosotros2 {
+    display: flex;
+    width: 62%;
+    text-align: center;
+    margin: 7% 0% 3% 3%;
+    flex-direction: column;
+}
+
+.texto_sobre_nosotros2 p {
+    padding: 2%;
+    font-size: small;
+}
+
+.grid_contactanos {
+    display: grid;
+    grid-template-rows: 13vh 1fr 13vh;
+    grid-template-areas: "header"
+        "cuerpo"
+        "footer";
+}
+
+.contactanos {
+    display: flex;
+}
+
+.formulario_contactanos {
+    display: flex;
+    padding: 3%;
+    width: 50%;
+    margin-top: 0%;
+    margin-left: 2%;
+}
+
+.datos_contactanos {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 7%;
+}
+
+.datos_contactanos div h2 {
+    font-weight: 400;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: x-large;
+}
+
+.datos_contactanos div p {
+    font-weight: 400;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    font-size: medium;
+}
+
+.formulario_contactanos form ul li input {
+    width: 150%;
+    padding-bottom: 10%;
+    margin: 7%;
+}
+
+.formulario_contactanos form ul li textarea {
+    width: 150%;
+    padding-bottom: 50%;
+    margin: 7%;
+}
+
+@media screen and (max-width: 1024px) {
+    .barra_navegacion li a {
+        padding: 6px;
+        margin: 3px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+    }
+
+    header div a img {
+        width: 57%;
+        margin-left: 14%;
+    }
+
+    .texto_inicio {
+        left: 0.7%;
+        font-size: 1rem
+    }
+
+    .texto_sobre_imagen {
+        top: 45%;
+        left: 22%;
+        font-size: 1.8rem
+    }
+
+    .btn_sobre_imagen {
+        top: 56%;
+        left: 46%;
+        font-size: 0.9rem;
+        padding: 6px;
+        border-radius: 12px;
+    }
+
+    .texto_articulos_destacados {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 2% 0 2% 0;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .card-footer {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    footer div {
+        font-size: 0.75rem;
+    }
+
+    i {
+        font-size: 25px;
+        display: flex;
+        margin: 17px 5px 4px 5px;
+        color: white;
+    }
+
+    main h1 {
+        font-size: 1rem;
+    }
+    
+    .categoria_caravanas {
+        margin-top: -2%;
+    font-size: 1.5rem;}
+
+    .categorias_catalogo {
+        font-size: 1.5rem;
+    }
+    
+    .catalogo_cards div img {
+        width: 100%;
+    }
+    
+    .catalogo_cards div p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .barra_navegacion li a {
+        padding: 4px;
+        margin: 5px;
+        font-size: 0.5rem;
+    }
+
+    header div a img {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .texto_inicio {
+        top: 14%;
+        left: 3%;
+        font-size: 1rem
+    }
+
+    .texto_sobre_imagen {
+        top: 37%;
+        left: 15%;
+        font-size: 1.3rem
+    }
+
+    .btn_sobre_imagen {
+        top: 53%;
+        left: 43%;
+        font-size: 1rem;
+    }
+
+    .texto_articulos_destacados {
+        font-size: 1.3rem;
+    }
+
+    .articulos_destacados_cards div p {
+        font-size: 0.9rem;
+    }
+
+    .card-footer {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    footer div {
+        font-size: 0.9rem;
+        margin-top: -16px;
+    }
+
+    i {
+        font-size: 2rem;
+        margin: 17px 18px 4px 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .barra_navegacion li a {
+        padding: 4px;
+        margin: 2px;
+        font-size: 0.4rem;
+    }
+
+    header div a img {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .texto_inicio {
+display: none;
+    }
+
+    .texto_sobre_imagen {
+        top: 37%;
+        left: 12%;
+        font-size: 1rem
+    }
+
+    .btn_sobre_imagen {
+        top: 54%;
+        left: 43%;
+        font-size: 0.7rem;
+    }
+
+    .texto_articulos_destacados {
+        font-size: 1.1rem;
+    }
+
+    .card-footer {
+        font-size: 0.9rem;
+    }
+
+    footer div {
+        margin-top: -24px;
+    }
+}
