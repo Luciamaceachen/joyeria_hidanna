@@ -24,17 +24,34 @@
 <body>
     <div class="grid_inicio">
         <header>
-            <div class="logo">
-                <a href="./index.html"><img src="../assets/images/logo.png" alt=""></a>
-            </div>
-            <nav>
-                <ul class="barra_navegacion">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/catalogo.html">Catálogo</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./pages/contactanos.html">Contáctanos</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="./index.html"><img src="../assets/images/logo.png" alt=""></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon navbar-dark "></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/catalogo.html">Catálogo</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contactanos.html">Contáctanos</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -43,15 +60,15 @@
             <div class="imagen_inicio">
                 <img src="./assets/images/imagen-inicio.png">
                 <h2 class="texto_sobre_imagen">Encuentra las joyas perfectas para ti</h2>
-                <p>
-                    <a href="./pages/catalogo.html" class="btn_sobre_imagen">Catálogo</a>
+                <p class="btn_sobre_imagen">
+                    <a href="./pages/catalogo.html">Catálogo</a>
                 </p>
             </div>
             <h2 class="texto_articulos_destacados">Artículos destacados</h2>
             <section class="articulos_destacados_cards">
 
                 <!---Cards Bootstrap-->
-                <div class="row row-cols-2 row-cols-md-5 row-cols-sm-2 g-4">
+                <div class="row row-cols-2 row-cols-md-5 row-cols-sm-3 g-4">
                     <div class="col">
                         <div class="card h-100">
                             <img src="./assets/images/anillo1.png" class="card-img-top" alt="...">
@@ -133,7 +150,7 @@
                             class="fa-brands fa-square-instagram"></i></a></li>
                 <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a></li>
             </ul>
-            <div>
+            <div class="toto">
                 <p class="texto_pie">©2022 Hidanna Joyas. Todos los derechos reservados</p>
             </div>
         </footer>
@@ -144,6 +161,5 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>
-
 
 </html>
