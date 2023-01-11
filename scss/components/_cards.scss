@@ -1,0 +1,46 @@
+.articulos_destacados_cards {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2% 2% 2%;
+
+    div img {
+        width:map-get($width, $cien)
+    }
+
+    div p {
+        width:map-get($width, $cien)
+    }
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card-footer {
+    font-size: 1rem;
+}
+
+.catalogo_cards {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2% 1% 2%;
+
+    div img {
+        width:map-get($width, $cien)
+    }
+
+    div p {
+        width:map-get($width, $cien)
+    }
+}
+
+.card:hover {
+    background-color: rgb(253, 254, 246);
+    box-shadow: 0 3px 10px rgb(192, 192, 192);
+}

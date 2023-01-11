@@ -1,0 +1,76 @@
+.texto_inicio {
+    display: none;
+}
+
+.texto_sobre_imagen {
+    position: absolute;
+    top: 44%;
+    @include texts($tertiary, 2.8vw, 300)
+}
+
+.texto_articulos_destacados {
+    @include texts(black, 1.42vw, 500);  
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+.categoria_caravanas {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.categorias_catalogo {
+    @extend .categoria_caravanas;
+    margin-top: 3%;
+}
+
+.texto_nuestros_servicios {
+    width: 65%;
+    text-align: center;
+    margin: 4% 1% 1% 4.5%;
+    flex-direction: column;
+    font-size: 1.2vw;
+
+    p {
+        padding: 2%;
+    }
+}
+
+.texto_sobre_nosotros {
+    display: flex;
+    width: 55%;
+    text-align: center;
+    margin: 8% 6% 3% 8%;
+    flex-direction: column;
+
+    p {
+        padding: 2%;
+        font-size: 1.3vw;
+    }
+} 
+
+.texto_sobre_nosotros3 {
+    @extend .texto_sobre_nosotros;
+    margin: 9% 0% 3% 8%;
+
+    p {
+        padding: 2%;
+        font-size: 1.3vw;
+    }
+}
+
+.datos_contactanos {
+    display: flex;
+    width:map-get($width, $cincuenta);
+    flex-direction: column;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+
+    div p {
+        @include texts(auto, 0.8vw, 400)
+    }
+}

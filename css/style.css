@@ -1,967 +1,617 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+.nuestros_servicios {
+  display: flex;
+  flex-wrap: wrap; }
+
+.sobre_nosotros {
+  display: flex; }
+
+.sobre_nosotros2 {
+  display: flex; }
+
+.contactanos {
+  display: flex; }
 
 .grid_inicio {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header"
-        "imagen"
-        "destacados"
-        "footer";
-}
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "imagen" "destacados" "footer"; }
+
+.articulos_destacados {
+  grid-area: destacados; }
+
+.grid_catalogo {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "catalogo" "footer"; }
+
+.grid_servicios {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 13vh 1fr 13vh;
+  grid-template-areas: "header" "servicios" "footer"; }
+
+.nuestros_servicios {
+  grid-area: servicios; }
+
+.grilla_sobre_nosotros {
+  display: grid;
+  grid-template-rows: 13vh 1fr 13vh;
+  grid-template-areas: "header" "contenido" "footer"; }
+
+.grid_contactanos {
+  display: grid;
+  grid-template-rows: auto auto 13vh;
+  grid-template-areas: "header" "cuerpo" "footer"; }
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 90% 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "izquierda redes derecha" "izquierda texto derecha"; }
+
+footer {
+  background-color: #16213E; }
+  footer ul {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer div {
+    grid-area: texto;
+    text-align: center;
+    font-size: 0.83rem;
+    color: white;
+    margin-top: -16px; }
+
+i {
+  font-size: 30px;
+  display: flex;
+  margin: 17px 5px 4px 5px;
+  color: white; }
+
+.texto_inicio {
+  display: none; }
+
+.texto_sobre_imagen {
+  position: absolute;
+  top: 44%;
+  color: white;
+  font-size: 2.8vw;
+  font-weight: 300; }
+
+.texto_articulos_destacados {
+  color: black;
+  font-size: 1.42vw;
+  font-weight: 500;
+  text-align: center;
+  margin: 2% 0 2% 0; }
+
+.categoria_caravanas, .categorias_catalogo {
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -1%;
+  margin-bottom: 3%;
+  width: 100%; }
+
+.categorias_catalogo {
+  margin-top: 3%; }
+
+.texto_nuestros_servicios {
+  width: 65%;
+  text-align: center;
+  margin: 4% 1% 1% 4.5%;
+  flex-direction: column;
+  font-size: 1.2vw; }
+  .texto_nuestros_servicios p {
+    padding: 2%; }
+
+.texto_sobre_nosotros, .texto_sobre_nosotros3 {
+  display: flex;
+  width: 55%;
+  text-align: center;
+  margin: 8% 6% 3% 8%;
+  flex-direction: column; }
+  .texto_sobre_nosotros p, .texto_sobre_nosotros3 p {
+    padding: 2%;
+    font-size: 1.3vw; }
+
+.texto_sobre_nosotros3 {
+  margin: 9% 0% 3% 8%; }
+  .texto_sobre_nosotros3 p {
+    padding: 2%;
+    font-size: 1.3vw; }
+
+.datos_contactanos {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin-top: 2.5%;
+  margin-bottom: 5%; }
+  .datos_contactanos div p {
+    color: auto;
+    font-size: 0.8vw;
+    font-weight: 400; }
 
 header {
-    grid-area: header;
-    height: 13vh;
-    background-color: #16213E;
-}
+  grid-area: header;
+  height: 13vh;
+  background-color: #16213E; }
+  header div a img {
+    width: 67%;
+    margin-left: 14%; }
 
-.navbar {
-    height: 13vh;
-    margin-right: 1%;
-}
+.btn_sobre_imagen {
+  background-color: #16213E;
+  color: white;
+  position: absolute;
+  top: 56%;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 8px;
+  border-radius: 14px;
+  text-decoration: none; }
+  .btn_sobre_imagen a {
+    color: white; }
+
+.btn_sobre_imagen:hover {
+  background-color: #2e3755;
+  color: white; }
+
+.articulos_destacados_cards {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2% 2% 2%; }
+  .articulos_destacados_cards div img {
+    width: 100%; }
+  .articulos_destacados_cards div p {
+    width: 100%; }
+
+.card-title {
+  font-size: 1.25rem; }
+
+.card-text {
+  font-size: 0.9rem; }
+
+.card-footer {
+  font-size: 1rem; }
+
+.catalogo_cards {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2% 1% 2%; }
+  .catalogo_cards div img {
+    width: 100%; }
+  .catalogo_cards div p {
+    width: 100%; }
+
+.card:hover {
+  background-color: #fdfef6;
+  box-shadow: 0 3px 10px silver; }
+
+.imagen_inicio {
+  grid-area: imagen;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .imagen_inicio img {
+    width: 100%; }
+
+.imagen_nuestros_servicios {
+  width: 27%; }
+  .imagen_nuestros_servicios img {
+    width: 95%;
+    margin: 5% 8% 15% 8%; }
+
+.imagen_sobre_nosotros {
+  width: 26%;
+  margin-right: 2%; }
+  .imagen_sobre_nosotros img {
+    width: map;
+    width: 100%;
+    margin: 8% 8% 8% 10%; }
+
+.imagen_sobre_nosotros2 img {
+  width: 100%;
+  margin: 15% 0% 8% 10%; }
+
+.datos_contactanos img {
+  width: 50%;
+  margin-top: 1.5%;
+  transition: width 1s; }
+
+.datos_contactanos img:hover {
+  width: 70%; }
 
 ul {
-    list-style-type: none;
-}
+  list-style-type: none; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
-.navbar li a {
+.navbar {
+  height: 13vh;
+  margin-right: 1%; }
+  .navbar li a {
     padding: 8px;
     margin: 4px;
     background-color: #101525;
     border-radius: 14px;
     font-size: 0.8rem;
-    color: white
-}
+    color: white; }
 
 .navbar li a:hover {
-    background-color: #263155;
-    color: white;
-}
-
-header div a img {
-    width: 67%;
-    margin-left: 14%;
-}
-
-.texto_inicio {
-    display: none;
-}
-
-.imagen_inicio {
-    grid-area: imagen;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.imagen_inicio img {
-    width: 100%;
-}
-
-.texto_sobre_imagen {
-    position: absolute;
-    top: 44%;
-    color: white;
-    font-weight: 300;
-    font-size: 2.8vw;
-}
-
-.btn_sobre_imagen {
-    color: white;
-    position: absolute;
-    top: 56%;
-    font-weight: 300;
-    font-size: 1.1rem;
-    background-color: #16213E;
-    padding: 8px;
-    border-radius: 14px;
-    text-decoration: none;
-}
-
-.btn_sobre_imagen a {
-    color: white;
-}
-
-.btn_sobre_imagen:hover {
-    background-color: #2e3755;
-    color: white;
-}
-
-.articulos_destacados {
-    grid-area: destacados;
-}
-
-.texto_articulos_destacados {
-    color: black;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.42rem;
-    margin: 2% 0 2% 0;
-}
-
-.articulos_destacados_cards {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 2% 2% 2%;
-}
-
-.articulos_destacados_cards div img {
-    width: 100%;
-}
-
-.articulos_destacados_cards div p {
-    width: 100%;
-}
-
-.card-title {
-    font-size: 1.25rem;
-}
-
-.card-text {
-    font-size: 0.9rem;
-}
-
-.card-footer {
-    font-size: 1rem;
-}
-
-.card:hover {
-    background-color: rgb(252, 253, 247);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
-footer {
-    grid-area: footer;
-    background-color: #16213E;
-    display: grid;
-    grid-template-columns: 1fr 90% 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "izquierda redes derecha"
-        "izquierda texto derecha";
-}
-
-footer ul {
-    grid-area: redes;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer div {
-    grid-area: texto;
-    text-align: center;
-    font-size: 0.83rem;
-    color: white;
-    margin-top: -16px;
-}
-
-i {
-    font-size: 30px;
-    display: flex;
-    margin: 17px 5px 4px 5px;
-    color: white;
-}
-
-.grid_catalogo {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header"
-        "catalogo"
-        "footer";
-}
+  background-color: #263155;
+  color: white; }
 
 main h1 {
-    color: black;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 1%;
-    margin-left: 0.5%;
-}
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 1%;
+  margin-left: 0.5%; }
 
-.categoria_caravanas {
-    color: black;
-    font-weight: 300;
-    text-align: center;
-    margin-top: -1%;
-    margin-bottom: 3%;
-    width: 100%;
-}
-
-.categorias_catalogo {
-    color: black;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 100%;
-}
-
-.catalogo_cards {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.catalogo_cards div img {
-    width: 100%;
-}
-
-.catalogo_cards div p {
-    width: 100%;
-}
-
-.grid_servicios {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 13vh 1fr 13vh;
-    grid-template-areas: "header"
-        "servicios"
-        "footer";
-}
-
-.nuestros_servicios {
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: servicios;
-}
-
-.imagen_nuestros_servicios {
-    width: 27%;
-}
-
-.imagen_nuestros_servicios img {
-    width: 95%;
-    margin: 5% 8% 15% 8%;
-}
-
-.texto_nuestros_servicios {
-    width: 65%;
-    text-align: center;
-    margin: 4% 1% 1% 4.5%;
-    flex-direction: column;
-}
-
-.texto_nuestros_servicios h3 {
-    font-size: 2vw;
-}
-
-.texto_nuestros_servicios p {
-    padding: 2%;
-}
-
-.texto_nuestros_servicios {
-    font-size: 1.2vw;
-}
-
-.grilla_sobre_nosotros {
-    display: grid;
-    grid-template-rows: 13vh 1fr 13vh;
-    grid-template-areas: "header"
-        "contenido"
-        "footer";
-}
-
-.sobre_nosotros {
-    display: flex;
-}
-
-.imagen_sobre_nosotros {
-    width: 26%;
-    margin-right: 2%;
-}
-
-.imagen_sobre_nosotros img {
-    width: 100%;
-    margin: 8% 8% 8% 10%;
-}
-
-.texto_sobre_nosotros {
-    display: flex;
-    width: 55%;
-    text-align: center;
-    margin: 8% 6% 3% 8%;
-    flex-direction: column;
-}
-
-.texto_sobre_nosotros h3 {
-    font-size: 2vw;
-}
-
-.texto_sobre_nosotros p {
-    padding: 2%;
-    font-size: 1.3vw;
-}
-
-.sobre_nosotros2 {
-    display: flex;
-}
-
-.imagen_sobre_nosotros2 img {
-    width: 100%;
-    margin: 15% 0% 8% 10%;
-}
-
-.texto_sobre_nosotros2 {
-    display: flex;
-    width: 55%;
-    text-align: center;
-    margin: 8% 6% 3% 6%;
-    flex-direction: column;
-}
-
-.texto_sobre_nosotros2 p {
-    padding: 2%;
-    font-size: small;
-    font-size: 1.3vw;
-}
-
-.texto_sobre_nosotros3 {
-    display: flex;
-    width: 55%;
-    text-align: center;
-    margin: 9% 6% 3% 6%;
-    flex-direction: column;
-}
-
-.texto_sobre_nosotros3 p {
-    padding: 2%;
-    font-size: small;
-    font-size: 1.3vw;
-}
-
-.grid_contactanos {
-    display: grid;
-    grid-template-rows: auto auto 13vh;
-    grid-template-areas: "header"
-        "cuerpo"
-        "footer";
-}
-
-.contactanos {
-    display: flex;
-}
-
-.formulario_contactanos {
-    display: flex;
-    padding: 3%;
-    width: 50%;
-    margin-left: 2%;
-}
-
-.datos_contactanos {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-}
+h3 {
+  font-size: 2vw; }
 
 .datos_contactanos div h2 {
-    font-weight: 500;
-    padding-top: 1%;
-    padding-bottom: 0%;
-    font-size: 1.1rem;
-}
+  font-weight: 500;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  font-size: 1.1rem; }
 
-.datos_contactanos div p {
-    font-weight: 400;
-    font-size: 0.8rem;
-}
-
-.datos_contactanos img {
-    width: 50%;
-    margin-top: 1.5%;
-    transition: width 1s;
-}
-
-.datos_contactanos img:hover {
-    width: 70%;
-}
-
-.formulario_contactanos form ul li input {
+.formulario_contactanos {
+  display: flex;
+  padding: 3%;
+  width: 50%;
+  margin-left: 2%; }
+  .formulario_contactanos form ul li input {
     width: 150%;
     padding-bottom: 10%;
-    margin: 7%;
-}
-
-.formulario_contactanos form ul li textarea {
+    margin: 7%; }
+  .formulario_contactanos form ul li textarea {
     width: 150%;
     padding-bottom: 50%;
-    margin: 7%;
-}
+    margin: 7%; }
 
 @media screen and (max-width: 1024px) {
-    .barra_navegacion li a {
-        font-size: 0.8rem;
-    }
-
-    header {
-        height: 13vh;
-    }
-
-    .navbar {
-        height: 100%;
-    }
-
-    .btn_sobre_imagen {
-        top: 56%;
-        left: 46%;
-        font-size: 1rem;
-        padding: 6px;
-        border-radius: 12px;
-    }
-
-    .texto_articulos_destacados {
-        font-weight: 500;
-        font-size: 1.2rem;
-        margin: 2% 0 2% 0;
-    }
-
-    .card-text {
-        font-size: 0.8rem;
-    }
-
-    .card-footer {
-        font-size: 0.9rem;
-    }
-
-    .card-title {
-        font-size: 1rem;
-    }
-
-    footer div {
-        font-size: 0.75rem;
-    }
-
-    i {
-        font-size: 25px;
-        display: flex;
-        margin: 17px 5px 4px 5px;
-        color: white;
-    }
-
-    main h1 {
-        font-size: 1rem;
-    }
-
-    .categoria_caravanas {
-        margin-top: -2%;
-        font-size: 1.5rem;
-    }
-
-    .categorias_catalogo {
-        font-size: 1.5rem;
-    }
-
-    .catalogo_cards div img {
-        width: 100%;
-    }
-
-    .catalogo_cards div p {
-        width: 100%;
-    }
-
-    .imagen_nuestros_servicios {
-        width: 38%;
-    }
-
+  .barra_navegacion li a {
+    font-size: 0.8rem; }
+  header {
+    height: 13vh; }
+  .navbar {
+    height: 100%; }
+  .btn_sobre_imagen {
+    top: 56%;
+    left: 46%;
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 12px; }
+  .texto_articulos_destacados {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 2% 0 2% 0; }
+  .card-text {
+    font-size: 0.8rem; }
+  .card-footer {
+    font-size: 0.9rem; }
+  .card-title {
+    font-size: 1rem; }
+  footer div {
+    font-size: 0.75rem; }
+  i {
+    font-size: 25px;
+    display: flex;
+    margin: 17px 5px 4px 5px;
+    color: white; }
+  main h1 {
+    font-size: 1rem; }
+  .categoria_caravanas, .categorias_catalogo {
+    margin-top: -2%;
+    font-size: 1.5rem; }
+  .categorias_catalogo {
+    font-size: 1.5rem; }
+  .catalogo_cards div img {
+    width: 100%; }
+  .catalogo_cards div p {
+    width: 100%; }
+  .imagen_nuestros_servicios {
+    width: 38%; }
     .imagen_nuestros_servicios img {
-        width: 95%;
-        margin: 5% 8% 15% 8%;
-    }
-
-    .texto_nuestros_servicios {
-        width: 56%;
-        font-size: 1.5vw;
-    }
-
+      width: 95%;
+      margin: 5% 8% 15% 8%; }
+  .texto_nuestros_servicios {
+    width: 56%;
+    font-size: 1.5vw; }
     .texto_nuestros_servicios h3 {
-        font-size: 2.2vw;
-    }
-
-    .texto_asesoramiento {
-        margin-top: -1.5%;
-    }
-
-    .texto_sobre_nosotros {
-        margin: 5% 6% 3% 8%;
-    }
-
-    .texto_sobre_nosotros h3 {
-        font-size: 2vw;
-    }
-
-    .texto_sobre_nosotros p {
-        font-size: 1.5vw;
-    }
-
-    .texto_sobre_nosotros2 {
-        margin: 4% 6% 3% 6%;
-    }
-
+      font-size: 2.2vw; }
+  .texto_asesoramiento {
+    margin-top: -1.5%; }
+  .texto_sobre_nosotros, .texto_sobre_nosotros3 {
+    margin: 5% 6% 3% 8%; }
+    .texto_sobre_nosotros h3, .texto_sobre_nosotros3 h3 {
+      font-size: 2vw; }
+    .texto_sobre_nosotros p, .texto_sobre_nosotros3 p {
+      font-size: 1.5vw; }
+  .texto_sobre_nosotros2 {
+    margin: 4% 6% 3% 6%; }
     .texto_sobre_nosotros2 p {
-        font-size: 1.5vw;
-    }
-
-    .texto_sobre_nosotros3 {
-        margin: 7% 6% 3% 6%;
-    }
-
+      font-size: 1.5vw; }
+  .texto_sobre_nosotros3 {
+    margin: 7% 6% 3% 6%; }
     .texto_sobre_nosotros3 p {
-        font-size: 1.5vw;
-    }
-
-}
+      font-size: 1.5vw; } }
 
 @media screen and (max-width: 991px) {
-    header {
-        height: auto;
-    }
-
-    .navbar {
-        height: 100%;
-        text-align: right;
-    }
-
-    .navbar li a {
-        padding: 0px;
-        margin: 2px;
-        margin-right: 1.5%;
-        background-color: #16213E;
-        text-align: right;
-        font-size: 0.8rem;
-        color: white
-    }
-
+  header {
+    height: auto; }
     header div a img {
-        width: 67%;
-        margin-left: 0%;
-    }
-
-    .logo {
-        margin-left: -3%;
-    }
-
-    .navbar li a:hover {
-        background-color: #16213E;
-        text-decoration-line: underline;
-    }
-
-    .btn_sobre_imagen {
-        top: 56%;
-        left: 46%;
-        font-size: 0.9rem;
-        padding: 6px;
-        border-radius: 12px;
-    }
-
-    .texto_sobre_nosotros {
-        margin: 5% 6% 3% 8%;
-        width: 43%;
-    }
-
-    .texto_sobre_nosotros h3 {
-        font-size: 2.5vw;
-    }
-
-    .texto_sobre_nosotros p {
-        font-size: 1.8vw;
-    }
-
-    .texto_sobre_nosotros2 {
-        margin: 4% 6% 3% 6%;
-        width: 43%;
-        margin-top: 6%;
-    }
-
+      width: 67%;
+      margin-left: 0%; }
+  .navbar {
+    height: 100%;
+    text-align: right; }
+    .navbar li a {
+      padding: 0px;
+      margin: 2px;
+      margin-right: 1.5%;
+      background-color: #16213E;
+      text-align: right;
+      font-size: 0.8rem;
+      color: white; }
+  .logo {
+    margin-left: -3%; }
+  .navbar li a:hover {
+    background-color: #16213E;
+    text-decoration-line: underline; }
+  .btn_sobre_imagen {
+    top: 56%;
+    left: 46%;
+    font-size: 0.9rem;
+    padding: 6px;
+    border-radius: 12px; }
+  .texto_sobre_nosotros, .texto_sobre_nosotros3 {
+    margin: 5% 6% 3% 8%;
+    width: 43%; }
+    .texto_sobre_nosotros h3, .texto_sobre_nosotros3 h3 {
+      font-size: 2.5vw; }
+    .texto_sobre_nosotros p, .texto_sobre_nosotros3 p {
+      font-size: 1.8vw; }
+  .texto_sobre_nosotros2 {
+    margin: 4% 6% 3% 6%;
+    width: 43%;
+    margin-top: 6%; }
     .texto_sobre_nosotros2 p {
-        font-size: 1.8vw;
-        margin-top: -5%;
-    }
-
-    .texto_sobre_nosotros3 {
-        margin: 8% 5% 3% 9%;
-        width: 43%;
-    }
-
+      font-size: 1.8vw;
+      margin-top: -5%; }
+  .texto_sobre_nosotros3 {
+    margin: 8% 5% 3% 9%;
+    width: 43%; }
     .texto_sobre_nosotros3 p {
-        font-size: 1.8vw;
-    }
-
-    .imagen_sobre_nosotros {
-        width: 38%;
-        margin-right: 2%;
-    }
-
+      font-size: 1.8vw; }
+  .imagen_sobre_nosotros {
+    width: 38%;
+    margin-right: 2%; }
     .imagen_sobre_nosotros img {
-        width: 100%;
-        margin: 8% 8% 8% 10%;
-    }
-
-    .formulario_contactanos {
-        margin-left: 0%;
-        margin-right: 2%;
-    }
-
-    .datos_contactanos {
-        margin-top: 3.3%;
-        margin-bottom: 5%;
-        margin-left: 2%;
-    }
-
+      width: 100%;
+      margin: 8% 8% 8% 10%; }
+  .datos_contactanos {
+    margin: 3.3% 0 5% 2%; }
     .datos_contactanos div h2 {
-        font-weight: 500;
-        padding-top: 1%;
-        padding-bottom: 0%;
-        font-size: 2vw;
-    }
-
+      font-weight: 500;
+      padding-top: 1%;
+      padding-bottom: 0%;
+      font-size: 2vw; }
     .datos_contactanos div p {
-        font-weight: 400;
-        font-size: 1.5vw;
-    }
-
+      font-weight: 400;
+      font-size: 1.5vw; }
+  .formulario_contactanos {
+    margin-left: 0%;
+    margin-right: 2%; }
     .formulario_contactanos form ul li input {
-        width: 35vw;
-        padding-bottom: 2%;
-        margin: 4%;
-    }
-
+      width: 35vw;
+      padding-bottom: 2%;
+      margin: 4%; }
     .formulario_contactanos form ul li textarea {
-        width: 35vw;
-        padding-bottom: 50%;
-        margin: 4%;
-    }
-}
+      width: 35vw;
+      padding-bottom: 50%;
+      margin: 4%; } }
 
 @media screen and (max-width: 767px) {
-    .barra_navegacion li a {
-        font-size: 0.6rem;
-    }
-
-    .texto_sobre_imagen {
-        top: 39%;
-        font-size: 4.2vw;
-    }
-
-    .btn_sobre_imagen {
-        top: 55%;
-        left: 44.5%;
-    }
-
-    .texto_articulos_destacados {
-        font-size: 1.15rem;
-    }
-
-    .articulos_destacados_cards div p {
-        font-size: 0.8rem;
-    }
-
-    .card-footer {
-        font-size: 0.8rem;
-    }
-
-    .card-title {
-        font-size: 1.1rem;
-    }
-
-    .texto_nuestros_servicios {
-        width: 86%;
-        font-size: 2.2vw;
-    }
-
-    .nuestros_servicios {
-        justify-content: center;
-    }
-
+  .barra_navegacion li a {
+    font-size: 0.6rem; }
+  .texto_sobre_imagen {
+    top: 39%;
+    font-size: 4.2vw; }
+  .btn_sobre_imagen {
+    top: 55%;
+    left: 44.5%; }
+  .texto_articulos_destacados {
+    font-size: 1.15rem; }
+  .articulos_destacados_cards div p {
+    font-size: 0.8rem; }
+  .card-footer {
+    font-size: 0.8rem; }
+  .card-title {
+    font-size: 1.1rem; }
+  .texto_nuestros_servicios {
+    width: 86%;
+    font-size: 2.2vw; }
     .texto_nuestros_servicios h3 {
-        font-size: 2.8vw;
-        margin-top: -10%;
-    }
-
-    .imagen_nuestros_servicios {
-        width: 55%;
-    }
-
+      font-size: 2.8vw;
+      margin-top: -10%; }
+  .nuestros_servicios {
+    justify-content: center; }
+  .imagen_nuestros_servicios {
+    width: 55%; }
     .imagen_nuestros_servicios img {
-        width: 95%;
-    }
-
-    .texto_asesoramiento {
-        margin-top: -1.5%;
-    }
-
-    .sobre_nosotros {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .sobre_nosotros2 {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-
-    .sobre_nosotros3 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .texto_sobre_nosotros {
-        margin: 8% 6% 0% 7%;
-        width: 90%;
-    }
-
-    .texto_sobre_nosotros h3 {
-        font-size: 3vw;
-        margin-top: -8%;
-    }
-
-    .texto_sobre_nosotros p {
-        font-size: 2.4vw;
-    }
-
-    .texto_sobre_nosotros2 {
-        margin: 3% 5% 0% 5%;
-        width: 90%;
-    }
-
+      width: 95%; }
+  .texto_asesoramiento {
+    margin-top: -1.5%; }
+  .sobre_nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .sobre_nosotros2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse; }
+  .sobre_nosotros3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .texto_sobre_nosotros, .texto_sobre_nosotros3 {
+    margin: 8% 6% 0% 7%;
+    width: 90%; }
+    .texto_sobre_nosotros h3, .texto_sobre_nosotros3 h3 {
+      font-size: 3vw;
+      margin-top: -8%; }
+    .texto_sobre_nosotros p, .texto_sobre_nosotros3 p {
+      font-size: 2.4vw; }
+  .texto_sobre_nosotros2 {
+    margin: 3% 5% 0% 5%;
+    width: 90%; }
     .texto_sobre_nosotros2 p {
-        font-size: 2.4vw;
-    }
-
-    .texto_sobre_nosotros3 {
-        margin: 0% 5% 3% 7%;
-        width: 90%;
-    }
-
+      font-size: 2.4vw; }
+  .texto_sobre_nosotros3 {
+    margin: 0% 5% 3% 7%;
+    width: 90%; }
     .texto_sobre_nosotros3 p {
-        font-size: 2.4vw;
-    }
-
-    .imagen_sobre_nosotros {
-        width: 38%;
-        margin-right: 2%;
-    }
-
+      font-size: 2.4vw; }
+  .imagen_sobre_nosotros {
+    width: 38%;
+    margin-right: 2%; }
     .imagen_sobre_nosotros img {
-        width: 100%;
-        margin: 8% 8% 8% 10%;
-    }
-
-    .contactanos {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .formulario_contactanos {
-        width: 90%;
-        margin-left: -5%;
-        justify-content: center;
-        margin-top: -5%;
-    }
-
-    .datos_contactanos {
-        margin-top: 0%;
-        margin-bottom: 2%;
-        margin-left: 0%;
-        width: 100%;
-    }
-
-    .datos_contactanos div h2 {
-        font-weight: 500;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        font-size: 3vw;
-    }
-
-    .datos_contactanos div p {
-        font-size: 2.5vw;
-    }
-
-    .datos_contactanos div {
-        font-size: 2.3vw;
-    }
-
+      width: 100%;
+      margin: 8% 8% 8% 10%; }
+  .contactanos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center; }
+  .formulario_contactanos {
+    width: 90%;
+    margin-left: -5%;
+    justify-content: center;
+    margin-top: -5%; }
     .formulario_contactanos form ul li input {
-        width: 50vw;
-        padding-bottom: 2%;
-        margin: 4%;
-    }
-
+      width: 50vw;
+      padding-bottom: 2%;
+      margin: 4%; }
     .formulario_contactanos form ul li textarea {
-        width: 50vw;
-        padding-bottom: 50%;
-        margin: 4%;
-    }
-
+      width: 50vw;
+      padding-bottom: 50%;
+      margin: 4%; }
+  .datos_contactanos {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    width: 100%; }
+    .datos_contactanos div h2 {
+      font-weight: 500;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      font-size: 3vw; }
+    .datos_contactanos div p {
+      font-size: 2.5vw; }
+    .datos_contactanos div {
+      font-size: 2.3vw; }
     .datos_contactanos img {
-        width: 50%;
-        margin-left: 2%;
-        margin-top: 5%;
-    }
-
-}
+      width: 50%;
+      margin-left: 2%;
+      margin-top: 5%; } }
 
 @media screen and (max-width: 420px) {
-    .barra_navegacion li a {
-        font-size: 0.4rem;
-    }
-
-    header div a img {
-        width: 55%;
-        margin-left: 20%;
-    }
-
-    .logo {
-        margin-left: -12%;
-    }
-
-    .texto_inicio {
-        display: none;
-    }
-
-    .texto_sobre_imagen {
-        top: 37%;
-        font-size: 4.9vw;
-    }
-
-    .btn_sobre_imagen {
-        top: 56%;
-        left: 43%;
-        font-size: 0.7rem;
-        padding: 4px;
-        border-radius: 9px;
-    }
-
-    .texto_articulos_destacados {
-        font-size: 0.9rem;
-    }
-
-    .articulos_destacados_cards div p {
-        font-size: 0.7rem;
-    }
-
-    .card-title {
-        font-size: 0.9rem;
-    }
-
-    .card-footer {
-        font-size: 0.7rem;
-    }
-
-    footer div {
-        font-size: 0.6rem;
-    }
-
-    i {
-        font-size: 1.4rem;
-    }
-
-    .imagen_nuestros_servicios img {
-        width: 90%;
-    }
-
-    .texto_nuestros_servicios {
-        width: 85%;
-        font-size: 3.4vw;
-    }
-
-    .nuestros_servicios {
-        justify-content: center;
-    }
-
+  .barra_navegacion li a {
+    font-size: 0.4rem; }
+  header div a img {
+    width: 55%;
+    margin-left: 20%; }
+  .logo {
+    margin-left: -12%; }
+  .texto_inicio {
+    display: none; }
+  .texto_sobre_imagen {
+    top: 37%;
+    font-size: 4.9vw; }
+  .btn_sobre_imagen {
+    top: 56%;
+    left: 43%;
+    font-size: 0.7rem;
+    padding: 4px;
+    border-radius: 9px; }
+  .texto_articulos_destacados {
+    font-size: 0.9rem; }
+  .articulos_destacados_cards div p {
+    font-size: 0.7rem; }
+  .card-title {
+    font-size: 0.9rem; }
+  .card-footer {
+    font-size: 0.7rem; }
+  footer div {
+    font-size: 0.6rem; }
+  i {
+    font-size: 1.4rem; }
+  .imagen_nuestros_servicios img {
+    width: 90%; }
+  .texto_nuestros_servicios {
+    width: 85%;
+    font-size: 3.4vw; }
     .texto_nuestros_servicios h3 {
-        font-size: 4.8vw;
-        margin-top: 1%;
-    }
-
-    .imagen_nuestros_servicios {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
+      font-size: 4.8vw;
+      margin-top: 1%; }
+  .nuestros_servicios {
+    justify-content: center; }
+  .imagen_nuestros_servicios {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
     .imagen_nuestros_servicios img {
-        width: 75%;
-        margin: 4% 5% 0 5%;
-    }
-
-    .texto_asesoramiento {
-        margin-top: -1.5%;
-    }
-
-    .texto_sobre_nosotros h3 {
-        font-size: 5vw;
-    }
-
-    .texto_sobre_nosotros p {
-        font-size: 3.5vw;
-    }
-
-    .texto_sobre_nosotros2 p {
-        font-size: 3.5vw;
-        margin-top: 0%;
-    }
-
-    .texto_sobre_nosotros3 p {
-        font-size: 3.5vw;
-        margin-top: 2%;
-    }
-
-    .imagen_sobre_nosotros {
-        width: 45%;
-        margin-right: 6%;
-    }
-
+      width: 75%;
+      margin: 4% 5% 0 5%; }
+  .texto_asesoramiento {
+    margin-top: -1.5%; }
+  .texto_sobre_nosotros h3, .texto_sobre_nosotros3 h3 {
+    font-size: 5vw; }
+  .texto_sobre_nosotros p, .texto_sobre_nosotros3 p {
+    font-size: 3.5vw; }
+  .texto_sobre_nosotros2 p {
+    font-size: 3.5vw;
+    margin-top: 0%; }
+  .texto_sobre_nosotros3 p {
+    font-size: 3.5vw;
+    margin-top: 2%; }
+  .imagen_sobre_nosotros {
+    width: 45%;
+    margin-right: 6%; }
     .imagen_sobre_nosotros img {
-        width: 100%;
-        margin: 8% 8% 8% 8%;
-    }
-
-    .datos_contactanos div h2 {
-        font-weight: 300;
-        padding-bottom: 1%;
-        font-size: 6vw;
-    }
-
-    .datos_contactanos div p {
-        font-size: 3vw;
-    }
-
-    .formulario_contactanos form ul li input {
-        width: 55vw;
-        margin: 4%;
-    }
-
-    .formulario_contactanos form ul li textarea {
-        width: 55vw;
-        padding-bottom: 50%;
-        margin: 4%;
-    }
-
-    .datos_contactanos img {
-        width: 80%;
-        margin-left: 2%;
-        margin-top: 5%;
-    }
-}
+      width: 100%;
+      margin: 8% 8% 8% 8%; }
+  .datos_contactanos div h2 {
+    font-weight: 300;
+    padding-bottom: 1%;
+    font-size: 6vw; }
+  .datos_contactanos div p {
+    font-size: 3vw; }
+  .formulario_contactanos form ul li input {
+    width: 55vw;
+    margin: 4%; }
+  .formulario_contactanos form ul li textarea {
+    width: 55vw;
+    padding-bottom: 50%;
+    margin: 4%; }
+  .datos_contactanos img {
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 5%; } }

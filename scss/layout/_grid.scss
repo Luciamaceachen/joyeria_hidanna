@@ -1,0 +1,57 @@
+.grid_inicio {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header"
+        "imagen"
+        "destacados"
+        "footer";
+}
+
+.articulos_destacados {
+    grid-area: destacados;
+}
+
+.grid_catalogo {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header"
+        "catalogo"
+        "footer";
+}
+
+.grid_servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 13vh 1fr 13vh;
+    grid-template-areas: "header"
+        "servicios"
+        "footer";
+}
+
+.nuestros_servicios {
+    grid-area: servicios;
+}
+
+.grilla_sobre_nosotros {
+    display: grid;
+    grid-template-rows: 13vh 1fr 13vh;
+    grid-template-areas: "header"
+        "contenido"
+        "footer";
+}
+
+.grid_contactanos {
+    display: grid;
+    grid-template-rows: auto auto 13vh;
+    grid-template-areas: "header"
+        "cuerpo"
+        "footer";
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "izquierda redes derecha"
+        "izquierda texto derecha"; }

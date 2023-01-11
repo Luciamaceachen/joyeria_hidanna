@@ -1,0 +1,16 @@
+main h1 {
+    @include texts(black, 1.1rem, 500);
+    padding: 1%;
+    margin-left: 0.5%;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+.datos_contactanos div h2 {
+    font-weight: 500;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 1.1rem;
+}

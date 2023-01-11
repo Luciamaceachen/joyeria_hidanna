@@ -1,0 +1,20 @@
+.btn_sobre_imagen {
+    background-color:$primary;
+    color:$tertiary;
+    position: absolute;
+    top: 56%;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 8px;
+    border-radius: 14px;
+    text-decoration: none;
+
+    a {
+        color:$tertiary;
+    }
+}
+
+.btn_sobre_imagen:hover {
+    background-color: #2e3755;
+    color:$tertiary;
+}

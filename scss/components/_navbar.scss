@@ -1,0 +1,18 @@
+.navbar {
+    height: 13vh;
+    margin-right: 1%;
+
+    li a {
+        padding: 8px;
+        margin: 4px;
+        background-color:$secondary;
+        border-radius: 14px;
+        font-size: 0.8rem;
+        color:$tertiary;
+    }
+}
+
+.navbar li a:hover {
+    background-color: #263155;
+    color:$tertiary;
+}

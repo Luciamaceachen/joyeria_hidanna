@@ -1,0 +1,558 @@
+@media screen and (max-width: 1024px) {
+    .barra_navegacion li a {
+        font-size: 0.8rem;
+    }
+
+    header {
+        height: 13vh;
+    }
+
+    .navbar {
+        height: 100%;
+    }
+
+    .btn_sobre_imagen {
+        top: 56%;
+        left: 46%;
+        font-size: 1rem;
+        padding: 6px;
+        border-radius: 12px;
+    }
+
+    .texto_articulos_destacados {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 2% 0 2% 0;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .card-footer {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    footer div {
+        font-size: 0.75rem;
+    }
+
+    i {
+        font-size: 25px;
+        display: flex;
+        margin: 17px 5px 4px 5px;
+        color: $tertiary;
+    }
+
+    main h1 {
+        font-size: 1rem;
+    }
+
+    .categoria_caravanas {
+        margin-top: -2%;
+        font-size: 1.5rem;
+    }
+
+    .categorias_catalogo {
+        font-size: 1.5rem;
+    }
+
+    .catalogo_cards div img {
+        width:map-get($width, $cien)
+    }
+
+    .catalogo_cards div p {
+        width:map-get($width, $cien)
+    }
+
+    .imagen_nuestros_servicios {
+        width: 38%;
+
+        img {
+            width: 95%;
+            margin: 5% 8% 15% 8%;
+        }
+    }
+
+    .texto_nuestros_servicios {
+        width: 56%;
+        font-size: 1.5vw;
+
+        h3 {
+            font-size: 2.2vw;
+        }
+    } 
+
+    .texto_asesoramiento {
+        margin-top: -1.5%;
+    }
+
+    .texto_sobre_nosotros {
+        margin: 5% 6% 3% 8%;
+
+        h3 {
+            font-size: 2vw;
+        }
+
+        p {
+            font-size: 1.5vw;
+        }
+    }
+
+    .texto_sobre_nosotros2 {
+        margin: 4% 6% 3% 6%;
+
+        p {
+            font-size: 1.5vw;
+        }
+    }
+
+    .texto_sobre_nosotros3 {
+        margin: 7% 6% 3% 6%;
+
+        p {
+            font-size: 1.5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        height: auto;
+
+        div a img {
+            width: 67%;
+            margin-left: 0%;
+        }
+    }
+
+    .navbar {
+        height: 100%;
+        text-align: right;
+
+        li a {
+            padding: 0px;
+            margin: 2px;
+            margin-right: 1.5%;
+            background-color: $primary;
+            text-align: right;
+            font-size: 0.8rem;
+            color: $tertiary;
+        }
+    }
+
+    .logo {
+        margin-left: -3%;
+    }
+
+    .navbar li a:hover {
+        background-color: $primary;
+        text-decoration-line: underline;
+    }
+
+    .btn_sobre_imagen {
+        top: 56%;
+        left: 46%;
+        font-size: 0.9rem;
+        padding: 6px;
+        border-radius: 12px;
+    }
+
+    .texto_sobre_nosotros {
+        margin: 5% 6% 3% 8%;
+        width: 43%;
+
+        h3 {
+            font-size: 2.5vw;
+        }
+
+        p {
+            font-size: 1.8vw;
+        }
+    }
+
+    .texto_sobre_nosotros2 {
+        margin: 4% 6% 3% 6%;
+        width: 43%;
+        margin-top: 6%;
+
+        p {
+            font-size: 1.8vw;
+            margin-top: -5%;
+        }
+    }
+
+    .texto_sobre_nosotros3 {
+        margin: 8% 5% 3% 9%;
+        width: 43%;
+
+        p {
+            font-size: 1.8vw;
+        }
+    }
+
+    .imagen_sobre_nosotros {
+        width: 38%;
+        margin-right: 2%;
+
+        img {
+            width:map-get($width, $cien);
+            margin: 8% 8% 8% 10%;
+        }
+    }
+
+    .datos_contactanos {
+        margin: 3.3% 0 5% 2%;
+
+        div h2 {
+            font-weight: 500;
+            padding-top: 1%;
+            padding-bottom: 0%;
+            font-size: 2vw;
+        }
+
+        div p {
+            font-weight: 400;
+            font-size: 1.5vw;
+        }
+    }
+
+    .formulario_contactanos {
+        margin-left: 0%;
+        margin-right: 2%;
+
+        form ul li input {
+            width: 35vw;
+            padding-bottom: 2%;
+            margin: 4%;
+        }
+
+        form ul li textarea {
+            width: 35vw;
+            padding-bottom: 50%;
+            margin: 4%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .barra_navegacion li a {
+        font-size: 0.6rem;
+    }
+
+    .texto_sobre_imagen {
+        top: 39%;
+        font-size: 4.2vw;
+    }
+
+    .btn_sobre_imagen {
+        top: 55%;
+        left: 44.5%;
+    }
+
+    .texto_articulos_destacados {
+        font-size: 1.15rem;
+    }
+
+    .articulos_destacados_cards div p {
+        font-size: 0.8rem;
+    }
+
+    .card-footer {
+        font-size: 0.8rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .texto_nuestros_servicios {
+        width: 86%;
+        font-size: 2.2vw;
+
+        h3 {
+            font-size: 2.8vw;
+            margin-top: -10%;
+        }
+    }
+
+    .nuestros_servicios {
+        justify-content: center;
+    }
+
+    .imagen_nuestros_servicios {
+        width: 55%;
+
+        img {
+            width: 95%;
+        }
+    }
+
+    .texto_asesoramiento {
+        margin-top: -1.5%;
+    }
+
+    .sobre_nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sobre_nosotros2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .sobre_nosotros3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .texto_sobre_nosotros {
+        margin: 8% 6% 0% 7%;
+        width: 90%;
+
+        h3 {
+            font-size: 3vw;
+            margin-top: -8%;
+        }
+
+        p {
+            font-size: 2.4vw;
+        }
+    }
+
+    .texto_sobre_nosotros2 {
+        margin: 3% 5% 0% 5%;
+        width: 90%;
+
+        p {
+            font-size: 2.4vw;
+        }
+    }
+
+    .texto_sobre_nosotros3 {
+        margin: 0% 5% 3% 7%;
+        width: 90%;
+
+        p {
+            font-size: 2.4vw;
+        }
+    }
+
+    .imagen_sobre_nosotros {
+        width: 38%;
+        margin-right: 2%;
+
+        img {
+            width:map-get($width, $cien);
+            margin: 8% 8% 8% 10%;
+        }
+    }
+
+    .contactanos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .formulario_contactanos {
+        width: 90%;
+        margin-left: -5%;
+        justify-content: center;
+        margin-top: -5%;
+
+        form ul li input {
+            width:map-get($width, $cincuenta);
+            padding-bottom: 2%;
+            margin: 4%;
+        }
+
+        form ul li textarea {
+            width: 50vw;
+            padding-bottom: 50%;
+            margin: 4%;
+        }
+    }
+
+    .datos_contactanos {
+        margin-top: 0%;
+        margin-bottom: 2%;
+        margin-left: 0%;
+        width: 100%;
+
+        div h2 {
+            font-weight: 500;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            font-size: 3vw;
+        }
+
+        div p {
+            font-size: 2.5vw;
+        }
+
+        div {
+            font-size: 2.3vw;
+        }
+
+        img {
+            width:map-get($width, $cincuenta);
+            margin-left: 2%;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .barra_navegacion li a {
+        font-size: 0.4rem;
+    }
+
+    header div a img {
+        width: 55%;
+        margin-left: 20%;
+    }
+
+    .logo {
+        margin-left: -12%;
+    }
+
+    .texto_inicio {
+        display: none;
+    }
+
+    .texto_sobre_imagen {
+        top: 37%;
+        font-size: 4.9vw;
+    }
+
+    .btn_sobre_imagen {
+        top: 56%;
+        left: 43%;
+        font-size: 0.7rem;
+        padding: 4px;
+        border-radius: 9px;
+    }
+
+    .texto_articulos_destacados {
+        font-size: 0.9rem;
+    }
+
+    .articulos_destacados_cards div p {
+        font-size: 0.7rem;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-footer {
+        font-size: 0.7rem;
+    }
+
+    footer div {
+        font-size: 0.6rem;
+    }
+
+    i {
+        font-size: 1.4rem;
+    }
+
+    .imagen_nuestros_servicios img {
+        width: 90%;
+    }
+
+    .texto_nuestros_servicios {
+        width: 85%;
+        font-size: 3.4vw;
+
+        h3 {
+            font-size: 4.8vw;
+            margin-top: 1%;
+        }
+    }
+
+    .nuestros_servicios {
+        justify-content: center;
+    }
+
+    .imagen_nuestros_servicios {
+        width:map-get($width, $cien);
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 75%;
+            margin: 4% 5% 0 5%;
+        }
+    }
+
+    .texto_asesoramiento {
+        margin-top: -1.5%;
+    }
+
+    .texto_sobre_nosotros h3 {
+        font-size: 5vw;
+    }
+
+    .texto_sobre_nosotros p {
+        font-size: 3.5vw;
+    }
+
+    .texto_sobre_nosotros2 p {
+        font-size: 3.5vw;
+        margin-top: 0%;
+    }
+
+    .texto_sobre_nosotros3 p {
+        font-size: 3.5vw;
+        margin-top: 2%;
+    }
+
+    .imagen_sobre_nosotros {
+        width: 45%;
+        margin-right: 6%;
+
+        img {
+            width:map-get($width, $cien);
+            margin: 8% 8% 8% 8%;
+        }
+    }
+
+    .datos_contactanos div h2 {
+        font-weight: 300;
+        padding-bottom: 1%;
+        font-size: 6vw;
+    }
+
+    .datos_contactanos div p {
+        font-size: 3vw;
+    }
+
+    .formulario_contactanos form ul li input {
+        width: 55vw;
+        margin: 4%;
+    }
+
+    .formulario_contactanos form ul li textarea {
+        width: 55vw;
+        padding-bottom: 50%;
+        margin: 4%;
+    }
+
+    .datos_contactanos img {
+        width: 80%;
+        margin-left: 2%;
+        margin-top: 5%;
+    }
+}

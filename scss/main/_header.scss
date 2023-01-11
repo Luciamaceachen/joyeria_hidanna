@@ -1,0 +1,10 @@
+header {
+    grid-area: header;
+    height: 13vh;
+    background-color:$primary;
+
+    div a img {
+        width: 67%;
+        margin-left: 14%;
+    }
+}
