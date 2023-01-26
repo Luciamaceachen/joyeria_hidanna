@@ -1,18 +1,26 @@
-.formulario_contactanos {
+.form {
     display: flex;
     padding: 3%;
-    width:map-get($width, $cincuenta);
+    width: map-get($width, cincuenta);
     margin-left: 2%;
+    font-size: 1vw;
+}
 
-    form ul li input {
-        width: 150%;
-        padding-bottom: 10%;
-        margin: 7%;
-    }
 
-    form ul li textarea {
-        width: 150%;
-        padding-bottom: 50%;
-        margin: 7%;
-    }    
+.form__input {
+    width: 190%;
+    padding-bottom: 10%;
+    margin: 10%;
+}
+
+.form__textarea {
+    width: 190%;
+    padding-bottom: 80%;
+    margin: 10%;
+}
+
+.form__btn {
+    width: 190%;
+    padding-bottom: 10%;
+    margin: 10%;
 }

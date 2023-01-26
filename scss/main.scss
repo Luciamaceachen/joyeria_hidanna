@@ -1,5 +1,5 @@
 @import "./normalize/reset";
-@import "./utilities/maps";
+@import "./utilities/width";
 @import "./utilities/color";
 @import "./utilities/text";
 @import "./layout/flex";
@@ -11,8 +11,10 @@
 @import "./components/cards";
 @import "./components/images";
 @import "./components/lists";
+@import "./components/map";
 @import "./components/navbar";
 @import "./components/titles";
 @import "./components/forms";
 @import "./views/queries";
+
 

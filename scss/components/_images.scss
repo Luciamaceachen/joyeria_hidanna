@@ -5,7 +5,7 @@
     justify-content: center;
 
     img {
-        width:map-get($width, $cien)
+        width: map-get($width, cien)
     }
 }
 
@@ -16,29 +16,19 @@
         width: 95%;
         margin: 5% 8% 15% 8%;
     }
-} 
+}
 
 .imagen_sobre_nosotros {
     width: 26%;
     margin-right: 2%;
 
     img {
-        width: map-get($width, $cien);
+        width: map-get($width, cien);
         margin: 8% 8% 8% 10%;
     }
 }
 
 .imagen_sobre_nosotros2 img {
-    width:map-get($width, $cien);
+    width: map-get($width, cien);
     margin: 15% 0% 8% 10%;
-}
-
-.datos_contactanos img {
-    width:map-get($width, $cincuenta);
-    margin-top: 1.5%;
-    transition: width 1s;
-}
-
-.datos_contactanos img:hover {
-    width: 70%;
 }

@@ -1,22 +1,22 @@
 footer {
-    background-color:$primary;
+    background-color: $primary;
 
-        ul {
-            grid-area: redes;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    ul {
+        grid-area: redes;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        div {
-            grid-area: texto;
-            text-align: center;
-            font-size: 0.83rem;
-            color: $tertiary;
-            margin-top: -16px;
-        }
-        
-} 
+    div {
+        grid-area: texto;
+        text-align: center;
+        font-size: 0.83rem;
+        color: $tertiary;
+        margin-top: -16px;
+    }
+
+}
 
 i {
     font-size: 30px;
